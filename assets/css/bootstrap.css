@@ -64,11 +64,11 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #7b8ab8;
-  --bs-body-bg: #d9e3f1;
+  --bs-body-color: #ffffff;
+  --bs-body-bg: #312f2f73;
   --bs-border-width: 0;
   --bs-border-style: solid;
-  --bs-border-color: rgba(55, 94, 148, 0.1);
+  --bs-border-color: rgb(41, 40, 40);
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
@@ -76,8 +76,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #485785;
-  --bs-link-hover-color: #3a466a;
+  --bs-link-color: #ffffff;
+  --bs-link-hover-color: #ffffff;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -105,6 +105,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --transition: all 0.5s ease;
+
 }
 
 hr {
@@ -3287,7 +3289,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: transparent;
   --bs-dropdown-divider-margin-y: 0.5rem;
   --bs-dropdown-box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.15), inset 1px 1px 3px rgba(255, 255, 255, 0.5), inset -5px -5px 20px rgba(0, 0, 0, 0.05);
-  --bs-dropdown-link-color: #7b8ab8;
+  --bs-dropdown-link-color: #ffffff;
   --bs-dropdown-link-hover-color: #444b40;
   --bs-dropdown-link-hover-bg: transparent;
   --bs-dropdown-link-active-color: #fff;
@@ -3512,6 +3514,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  font-weight: bold;
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--bs-dropdown-link-hover-color);
@@ -3673,9 +3676,9 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #7b8ab8;
-  --bs-nav-link-hover-color: #7b8ab8;
-  --bs-nav-link-disabled-color: #adb6d3;
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #ffffff;
+  --bs-nav-link-disabled-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -3688,7 +3691,7 @@ textarea.form-control-lg {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color:white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3698,7 +3701,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--bs-nav-link-hover-color);
+  color: beige;
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3712,8 +3715,8 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-radius: 0;
   --bs-nav-tabs-link-hover-border-color: #d9e3f1 #d9e3f1 #dee2e6;
   --bs-nav-tabs-link-active-color: #fff;
-  --bs-nav-tabs-link-active-bg: #378dfc;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #378dfc;
+  --bs-nav-tabs-link-active-bg: #ffffff;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #ffffff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -4208,16 +4211,16 @@ textarea.form-control-lg {
   overflow-y: visible;
 }
 
-.navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.75);
+/* .navbar-dark {
+  --bs-navbar-color: rgb(0, 0, 0);
   --bs-navbar-hover-color: #fff;
-  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+  --bs-navbar-disabled-color: rgb(0, 0, 0);
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+} */
 
 .card {
   --bs-card-spacer-y: 1.5rem;
